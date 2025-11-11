@@ -1,0 +1,62 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "success": "Success!",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "noResults": "No results found",
+    "notFoundTitle": "Page Not Found",
+    "notFoundMessage": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go Home",
+    "errorTitle": "Something went wrong",
+    "errorMessage": "An unexpected error occurred. Please try again later.",
+    "tryAgain": "Try Again"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "auth": {
+    "loginTitle": "Login to your account",
+    "registerTitle": "Create an account",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
+  },
+  "home": {
+    "title": "Next.js 16 Advanced Starter",
+    "subtitle": "Production-ready starter with modern features and best practices",
+    "features": {
+      "react": "React 19 & Next.js 16",
+      "reactDesc": "Latest versions with server components",
+      "i18n": "Multi-language",
+      "i18nDesc": "i18n with next-intl",
+      "auth": "Authentication",
+      "authDesc": "NextAuth with Laravel API",
+      "query": "TanStack Query",
+      "queryDesc": "Server & client data fetching",
+      "ui": "Tailwind + shadcn",
+      "uiDesc": "Beautiful UI components",
+      "state": "State Management",
+      "stateDesc": "Zustand for global state"
+    }
+  }
+}

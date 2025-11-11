@@ -1,0 +1,59 @@
+{
+  "common": {
+    "welcome": "স্বাগতম",
+    "loading": "লোড হচ্ছে...",
+    "error": "কিছু ভুল হয়েছে",
+    "success": "সফল!",
+    "cancel": "বাতিল",
+    "confirm": "নিশ্চিত করুন",
+    "save": "সংরক্ষণ",
+    "delete": "মুছুন",
+    "edit": "সম্পাদনা",
+    "search": "অনুসন্ধান",
+    "filter": "ফিল্টার",
+    "sort": "সাজান",
+    "noResults": "কোনো ফলাফল পাওয়া যায়নি",
+    "notFoundTitle": "পৃষ্ঠা পাওয়া যায়নি",
+    "notFoundMessage": "আপনি যে পৃষ্ঠাটি খুঁজছেন তা বিদ্যমান নয় বা স্থানান্তর করা হয়েছে।",
+    "goHome": "হোমে ফিরে যান"
+  },
+  "nav": {
+    "home": "হোম",
+    "about": "সম্পর্কে",
+    "contact": "যোগাযোগ",
+    "login": "লগইন",
+    "register": "নিবন্ধন",
+    "profile": "প্রোফাইল",
+    "logout": "লগআউট"
+  },
+  "auth": {
+    "loginTitle": "আপনার অ্যাকাউন্টে লগইন করুন",
+    "registerTitle": "একটি অ্যাকাউন্ট তৈরি করুন",
+    "email": "ইমেইল",
+    "password": "পাসওয়ার্ড",
+    "confirmPassword": "পাসওয়ার্ড নিশ্চিত করুন",
+    "forgotPassword": "পাসওয়ার্ড ভুলে গেছেন?",
+    "noAccount": "অ্যাকাউন্ট নেই?",
+    "hasAccount": "ইতিমধ্যে একটি অ্যাকাউন্ট আছে?",
+    "signIn": "সাইন ইন",
+    "signUp": "সাইন আপ"
+  },
+  "home": {
+    "title": "Next.js 16 অ্যাডভান্সড স্টার্টার",
+    "subtitle": "আধুনিক বৈশিষ্ট্য এবং সর্বোত্তম অনুশীলন সহ প্রোডাকশন-রেডি স্টার্টার",
+    "features": {
+      "react": "React 19 & Next.js 16",
+      "reactDesc": "সার্ভার কম্পোনেন্ট সহ সর্বশেষ সংস্করণ",
+      "i18n": "বহু-ভাষা",
+      "i18nDesc": "next-intl দিয়ে i18n",
+      "auth": "প্রমাণীকরণ",
+      "authDesc": "Laravel API সহ NextAuth",
+      "query": "TanStack Query",
+      "queryDesc": "সার্ভার এবং ক্লায়েন্ট ডেটা ফেচিং",
+      "ui": "Tailwind + shadcn",
+      "uiDesc": "সুন্দর UI কম্পোনেন্ট",
+      "state": "স্টেট ম্যানেজমেন্ট",
+      "stateDesc": "গ্লোবাল স্টেটের জন্য Zustand"
+    }
+  }
+}

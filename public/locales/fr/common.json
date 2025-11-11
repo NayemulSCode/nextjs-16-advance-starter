@@ -1,0 +1,56 @@
+{
+  "common": {
+    "welcome": "Bienvenue",
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "success": "Succès!",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "noResults": "Aucun résultat trouvé"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "contact": "Contact",
+    "login": "Se connecter",
+    "register": "S'inscrire",
+    "profile": "Profil",
+    "logout": "Se déconnecter"
+  },
+  "auth": {
+    "loginTitle": "Connectez-vous à votre compte",
+    "registerTitle": "Créer un compte",
+    "email": "Email",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "forgotPassword": "Mot de passe oublié?",
+    "noAccount": "Vous n'avez pas de compte?",
+    "hasAccount": "Vous avez déjà un compte?",
+    "signIn": "Se connecter",
+    "signUp": "S'inscrire"
+  },
+  "home": {
+    "title": "Starter Avancé Next.js 16",
+    "subtitle": "Starter prêt pour la production avec des fonctionnalités modernes et des meilleures pratiques",
+    "features": {
+      "react": "React 19 & Next.js 16",
+      "reactDesc": "Dernières versions avec composants serveur",
+      "i18n": "Multi-langue",
+      "i18nDesc": "i18n avec next-intl",
+      "auth": "Authentification",
+      "authDesc": "NextAuth avec API Laravel",
+      "query": "TanStack Query",
+      "queryDesc": "Récupération de données serveur et client",
+      "ui": "Tailwind + shadcn",
+      "uiDesc": "Beaux composants UI",
+      "state": "Gestion d'État",
+      "stateDesc": "Zustand pour l'état global"
+    }
+  }
+}

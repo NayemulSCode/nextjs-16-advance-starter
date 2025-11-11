@@ -1,4 +1,4 @@
-project-root/
+```project-root/
 │
 ├── public/
 │   ├── fonts/
@@ -247,6 +247,40 @@ project-root/
 ├── components.json
 ├── package.json
 └── README.md
+```
+current project structure
+
+```
+src/
+├── app/
+│   ├── [locale]/
+│   │   ├── (auth)/
+│   │   │   ├── login/page.tsx
+│   │   │   └── layout.tsx
+│   │   ├── (main)/
+│   │   │   ├── page.tsx
+│   │   │   └── layout.tsx
+│   │   ├── layout.tsx
+│   │   └── not-found.tsx
+│   ├── api/auth/[...nextauth]/route.ts
+│   └── layout.tsx
+├── components/
+│   ├── ui/
+│   ├── shared/
+│   └── providers/
+├── lib/
+│   ├── api/
+│   ├── auth/
+│   ├── i18n/
+│   ├── query/
+│   ├── validations/
+│   └── utils/
+├── hooks/
+├── store/
+├── types/
+├── constants/
+└── middleware.ts
+```
 
 ### shadcn/ui
 Selected options:
