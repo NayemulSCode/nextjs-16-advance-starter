@@ -279,7 +279,7 @@ src/
 ├── store/
 ├── types/
 ├── constants/
-└── middleware.ts
+└── proxy.ts
 ```
 
 ### shadcn/ui

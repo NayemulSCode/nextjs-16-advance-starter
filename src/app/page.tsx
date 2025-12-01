@@ -1,16 +1,11 @@
+// src/app/page.tsx
+// Redirects root path to default locale
 
-export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between bg-white px-16 py-32 sm:items-start dark:bg-black">
-        <h1 className="mb-6 text-5xl font-bold tracking-tight">
-          🚀 Next.js 16 Advanced Starter
-        </h1>
+import { redirect } from 'next/navigation';
+import { defaultLocale } from '@/locales/config';
 
-        <p className="text-muted-foreground mb-8 text-xl">
-          Production-ready starter with modern features and best practices
-        </p>
-      </main>
-    </div>
-  );
+export default function RootPage() {
+  // User visits: yoursite.com
+  // Redirects to: yoursite.com/en (or default locale)
+  redirect(`/${defaultLocale}`);
 }
