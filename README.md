@@ -254,3 +254,8 @@ Selected options:
 - Base color: Slate
 - CSS variables: Yes
 
+
+## Puck CMS editor
+
+Visual page editor with SEO fields, drag & drop blocks, rich text and image upload, opened from a separate
+admin app via a short-lived JWT. See [docs/PUCK_CMS.md](docs/PUCK_CMS.md) and `.env.example`.

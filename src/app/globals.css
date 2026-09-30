@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -119,4 +119,59 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Rich text output from the Puck editor */
+.cms-richtext {
+  line-height: 1.7;
+}
+.cms-richtext h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 1.25rem 0 0.75rem;
+}
+.cms-richtext h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.75rem;
+}
+.cms-richtext h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+}
+.cms-richtext p {
+  margin: 0.75rem 0;
+}
+.cms-richtext ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 0.75rem 0;
+}
+.cms-richtext ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin: 0.75rem 0;
+}
+.cms-richtext a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+.cms-richtext blockquote {
+  border-left: 4px solid #d4d4d8;
+  padding-left: 1rem;
+  color: #52525b;
+  margin: 1rem 0;
+}
+.cms-richtext code {
+  background: #f4f4f5;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}
+.cms-richtext pre {
+  background: #18181b;
+  color: #f4f4f5;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
 }

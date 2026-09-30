@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local dev uploads / page store
+/public/uploads/
+/.data/
+
+!.env.example

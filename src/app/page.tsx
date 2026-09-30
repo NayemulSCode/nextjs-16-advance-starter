@@ -1,17 +1,17 @@
-import Image from "next/image";
+import type { Metadata } from 'next';
+import { Render } from '@puckeditor/core/rsc';
+import { config } from '@/puck/config';
+import { homeTemplate } from '@/puck/codeware/home';
+import { getPage } from '@/lib/cms/store';
+import { pageMetadata } from '@/lib/cms/seo';
 
-export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between bg-white px-16 py-32 sm:items-start dark:bg-black">
-        <h1 className="mb-6 text-5xl font-bold tracking-tight">
-          🚀 Next.js 16 Advanced Starter
-        </h1>
+// Home is CMS-managed. Until it is first published, the approved Codeware design is served.
+const load = async () => (await getPage('/'))?.data ?? homeTemplate();
 
-        <p className="text-muted-foreground mb-8 text-xl">
-          Production-ready starter with modern features and best practices
-        </p>
-      </main>
-    </div>
-  );
+export async function generateMetadata(): Promise<Metadata> {
+  return pageMetadata(await load(), '/');
+}
+
+export default async function Home() {
+  return <Render config={config} data={await load()} />;
 }
