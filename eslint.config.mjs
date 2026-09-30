@@ -1,13 +1,14 @@
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
+import unusedImports from "eslint-plugin-unused-imports";
 
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
   // Override default ignores of eslint-config-next.
   {
-    plugins: ["unused-imports"],
+    plugins: { "unused-imports": unusedImports },
     rules: {
       "no-console": "warn",
       "unused-imports/no-unused-imports": "error",
@@ -28,6 +29,7 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    ".kilo/**",
   ]),
 ]);
 
