@@ -11,6 +11,12 @@ import { slugToPath } from '@/lib/cms/paths';
  *  2. Otherwise the cookie must hold a valid token, else the user is sent back to the admin.
  */
 export async function proxy(req: NextRequest) {
+  if (!process.env.EDITOR_JWT_SECRET) {
+    return new NextResponse(
+      'EDITOR_JWT_SECRET is not set. Copy .env.example to .env.local, set it to the same value used to sign the token, then restart the dev server.',
+      { status: 500 }
+    );
+  }
   const { pathname, searchParams } = req.nextUrl;
   const pagePath = slugToPath(pathname.replace(/^\/editor\/?/, '').split('/'));
 

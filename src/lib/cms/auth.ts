@@ -15,15 +15,20 @@ export async function verifyEditorToken(
   token: string | undefined | null
 ): Promise<EditorClaims | null> {
   if (!token) return null;
+  // A missing secret is a setup error, not a bad token: let it throw loudly.
+  const key = cmsEnv.jwtSecret();
   try {
-    const { payload } = await jwtVerify(token, cmsEnv.jwtSecret(), {
+    const { payload } = await jwtVerify(token, key, {
       algorithms: ['HS256'],
       issuer: cmsEnv.issuer(),
       audience: cmsEnv.audience(),
     });
     if (!payload.sub || !payload.exp) return null;
     return payload as unknown as EditorClaims;
-  } catch {
+  } catch (e) {
+    if (process.env.NODE_ENV !== 'production') {
+      console.warn(`[cms] editor token rejected: ${(e as Error).message}`);
+    }
     return null;
   }
 }
