@@ -31,16 +31,23 @@ user reopens page in admin                  public page /about re-renders (reval
 
 Local development: `EDITOR_JWT_SECRET=... node scripts/dev-token.mjs /about` prints a ready-to-open URL.
 
-### Content backend
+### Local mode vs live backend
 
-Set `CMS_API_URL` to your admin's REST API (Bearer = the editor token):
+The starter works with **no backend** and switches to yours by setting one variable.
 
-- `GET  {CMS_API_URL}/pages?path=/about` → `{ path, data, updatedAt }` or `404`
-- `PUT  {CMS_API_URL}/pages` body `{ path, data, updatedAt }`
-- `POST {CMS_API_URL}/media` multipart `file` → `{ url }` (image/video uploads)
+| | Local mode (`CMS_API_URL` empty) | Live mode (`CMS_API_URL=https://api.example.com`) |
+| - | - | - |
+| Pages | `.data/pages/*.json` | read/written via your API |
+| Uploads | `.data/uploads/`, served at `/uploads/<file>` | forwarded to your media endpoint |
+| Public site | reads files | reads your API (cached `CMS_REVALIDATE_SECONDS`, default 60s) |
 
-Without `CMS_API_URL`, pages are stored in `.data/pages/*.json` and uploads go to `public/uploads/`
-(images are resized and converted to WebP with `sharp`). Development only.
+Live-mode contract (paths/keys configurable in `.env.example`; the editor token is sent as `Authorization: Bearer`):
+
+- `GET  {CMS_API_URL}{CMS_PAGES_PATH}?path=/about` → `{ path, data }`, `{ page: { data } }` or bare Puck data; `404` if the page has no content yet
+- `PUT  {CMS_API_URL}{CMS_PAGES_PATH}` body `{ path, data, updatedAt }`
+- `POST {CMS_MEDIA_URL or CMS_API_URL+CMS_MEDIA_PATH}` multipart `file` → `{ url }` (also `data.url`, `location`, `file.url`, `path`); relative URLs are resolved against `CMS_MEDIA_BASE_URL` or the API origin
+- Public reads may send `X-API-Key: $CMS_API_KEY` if set.
+- **Instant refresh:** have the backend call `POST /api/revalidate` with header `x-revalidate-secret: $CMS_REVALIDATE_SECRET` and body `{ "path": "/about" }` (omit `path` to refresh all pages). Publishing from the editor also revalidates the page.
 
 `data` is Puck JSON: `{ root: { props: { title, description, keywords, ogImage, canonical, noindex, contactEmail } }, content: [...] }`.
 

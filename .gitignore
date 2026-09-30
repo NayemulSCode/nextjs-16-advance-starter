@@ -41,7 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 # local dev uploads / page store
-/public/uploads/
 /.data/
 
 !.env.example

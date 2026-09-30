@@ -4,6 +4,15 @@ import path from 'path';
 import { cmsEnv } from './env';
 import type { PageData, PageRecord } from './types';
 
+/**
+ * Page storage with two interchangeable modes:
+ *  - local  (CMS_API_URL empty): JSON files in ./.data/pages  – works out of the box
+ *  - remote (CMS_API_URL set):   your admin/backend REST API
+ *
+ * Remote contract (paths configurable via CMS_PAGES_PATH):
+ *   GET {api}{pages}?path=/about -> { path, data } | { page: { data } } | Puck data | 404
+ *   PUT {api}{pages}             -> body { path, data, updatedAt }
+ */
 const DIR = path.join(process.cwd(), '.data', 'pages');
 const file = (p: string) =>
   path.join(
@@ -11,26 +20,52 @@ const file = (p: string) =>
     (p === '/' ? 'index' : p.slice(1).replace(/\//g, '__')) + '.json'
   );
 
+export const isRemote = () => !!cmsEnv.apiUrl();
+
+/** Accept the common response shapes so the backend does not have to match exactly. */
+function toRecord(pagePath: string, json: unknown): PageRecord | null {
+  const j = json as Record<string, unknown> | null;
+  if (!j || typeof j !== 'object') return null;
+  const inner = (j.page ?? j) as Record<string, unknown>;
+  const data = (inner.data ??
+    (inner.content ? inner : null)) as PageData | null;
+  if (!data || !Array.isArray((data as PageData).content)) return null;
+  return {
+    path: (inner.path as string) ?? pagePath,
+    data,
+    updatedAt: inner.updatedAt as string | undefined,
+  };
+}
+
 /**
- * Page storage. Uses the admin's REST API when CMS_API_URL is set,
- * otherwise a local JSON file store (development only).
+ * @param token editor token: reads through the editor use it (no cache, sees drafts);
+ *              public reads omit it and are cached for CMS_REVALIDATE_SECONDS.
  */
 export async function getPage(
   pagePath: string,
   token?: string
 ): Promise<PageRecord | null> {
-  const api = cmsEnv.apiUrl();
-  if (api) {
+  if (isRemote()) {
+    const headers: Record<string, string> = {};
+    if (token) headers.Authorization = `Bearer ${token}`;
+    else if (cmsEnv.apiKey()) headers['X-API-Key'] = cmsEnv.apiKey();
     const res = await fetch(
-      `${api}/pages?path=${encodeURIComponent(pagePath)}`,
+      `${cmsEnv.apiUrl()}${cmsEnv.pagesPath()}?path=${encodeURIComponent(pagePath)}`,
       {
-        headers: token ? { Authorization: `Bearer ${token}` } : {},
-        cache: 'no-store',
+        headers,
+        ...(token
+          ? { cache: 'no-store' as const }
+          : {
+              next: {
+                revalidate: cmsEnv.revalidateSeconds(),
+                tags: ['cms-pages'],
+              },
+            }),
       }
     );
     if (res.status === 404) return null;
     if (!res.ok) throw new Error(`CMS API ${res.status}`);
-    return (await res.json()) as PageRecord;
+    return toRecord(pagePath, await res.json());
   }
   try {
     return JSON.parse(await fs.readFile(file(pagePath), 'utf8'));
@@ -49,9 +84,8 @@ export async function savePage(
     data,
     updatedAt: new Date().toISOString(),
   };
-  const api = cmsEnv.apiUrl();
-  if (api) {
-    const res = await fetch(`${api}/pages`, {
+  if (isRemote()) {
+    const res = await fetch(`${cmsEnv.apiUrl()}${cmsEnv.pagesPath()}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
