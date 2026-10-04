@@ -1,0 +1,840 @@
+[
+  {
+    "district": "bagerhat",
+    "items": [
+      {
+        "id": "bagerhat-honey",
+        "en": "Sundarbans honey",
+        "bn": "সুন্দরবনের মধু",
+        "note_en": "Wild honey gathered from the mangrove forest",
+        "note_bn": "ম্যানগ্রোভ বন থেকে সংগ্রহ করা মধু"
+      }
+    ]
+  },
+  {
+    "district": "bandarban",
+    "items": [
+      {
+        "id": "bandarban-bamboo-chicken",
+        "en": "Bamboo chicken",
+        "bn": "বাঁশের মুরগি",
+        "note_en": "Chicken cooked inside green bamboo",
+        "note_bn": "কাঁচা বাঁশের ভেতরে রান্না করা মুরগি"
+      }
+    ]
+  },
+  {
+    "district": "barguna",
+    "items": [
+      {
+        "id": "barguna-coconut",
+        "en": "Coconut water",
+        "bn": "ডাব",
+        "note_en": "Fresh green coconuts from the coast",
+        "note_bn": "উপকূলের তাজা ডাব"
+      }
+    ]
+  },
+  {
+    "district": "barishal",
+    "items": [
+      {
+        "id": "barishal-ilish",
+        "en": "Ilish curry",
+        "bn": "ইলিশের তরকারি",
+        "note_en": "Hilsa from the river delta",
+        "note_bn": "নদীর ইলিশ"
+      }
+    ]
+  },
+  {
+    "district": "bhola",
+    "items": [
+      {
+        "id": "bhola-buffalo-doi",
+        "en": "Buffalo milk doi",
+        "bn": "মহিষের দই",
+        "note_en": "Thick curd made from buffalo milk",
+        "note_bn": "মহিষের দুধের ঘন দই"
+      }
+    ]
+  },
+  {
+    "district": "bogura",
+    "items": [
+      {
+        "id": "bogura-doi",
+        "en": "Doi",
+        "bn": "দই",
+        "note_en": "Sweet yogurt in clay pots",
+        "note_bn": "মাটির পাত্রে মিষ্টি দই"
+      }
+    ]
+  },
+  {
+    "district": "brahmanbaria",
+    "items": [
+      {
+        "id": "brahmanbaria-sweets",
+        "en": "Sweets of Brahmanbaria",
+        "bn": "ব্রাহ্মণবাড়িয়ার মিষ্টি",
+        "note_en": "Local milk sweets",
+        "note_bn": "স্থানীয় দুধের মিষ্টি"
+      }
+    ]
+  },
+  {
+    "district": "chandpur",
+    "items": [
+      {
+        "id": "chandpur-ilish",
+        "en": "Chandpur ilish",
+        "bn": "চাঁদপুরের ইলিশ",
+        "note_en": "Hilsa from the Meghna",
+        "note_bn": "মেঘনার ইলিশ"
+      }
+    ]
+  },
+  {
+    "district": "chapainawabganj",
+    "items": [
+      {
+        "id": "chapainawabganj-mango",
+        "en": "Mango",
+        "bn": "আম",
+        "note_en": "Famous mangoes of the region",
+        "note_bn": "অঞ্চলের বিখ্যাত আম"
+      }
+    ]
+  },
+  {
+    "district": "chattogram",
+    "items": [
+      {
+        "id": "chattogram-mezban",
+        "en": "Mezban beef",
+        "bn": "মেজবানের মাংস",
+        "note_en": "Slow-cooked beef served at feasts",
+        "note_bn": "ভোজে পরিবেশিত ধীরে রান্না করা গরুর মাংস"
+      },
+      {
+        "id": "chattogram-kala-bhuna",
+        "en": "Kala bhuna",
+        "bn": "কালা ভুনা",
+        "note_en": "Dark, spicy beef roast",
+        "note_bn": "কালচে ঝাল গরুর ভুনা"
+      }
+    ]
+  },
+  {
+    "district": "chuadanga",
+    "items": [
+      {
+        "id": "chuadanga-gur",
+        "en": "Gur",
+        "bn": "গুড়",
+        "note_en": "Jaggery from sugarcane and date palm",
+        "note_bn": "আখ ও খেজুরের গুড়"
+      }
+    ]
+  },
+  {
+    "district": "coxsbazar",
+    "items": [
+      {
+        "id": "coxsbazar-shutki",
+        "en": "Shutki",
+        "bn": "শুঁটকি",
+        "note_en": "Sun-dried sea fish",
+        "note_bn": "রোদে শুকানো সামুদ্রিক মাছ"
+      },
+      {
+        "id": "coxsbazar-sea-fish",
+        "en": "Fresh sea fish",
+        "bn": "সামুদ্রিক মাছ",
+        "note_en": "Grilled or fried catch of the day",
+        "note_bn": "তাজা সামুদ্রিক মাছ ভাজা বা গ্রিল"
+      }
+    ]
+  },
+  {
+    "district": "cumilla",
+    "items": [
+      {
+        "id": "cumilla-roshmalai",
+        "en": "Roshmalai",
+        "bn": "রসমালাই",
+        "note_en": "Soft chhana discs in thickened milk",
+        "note_bn": "ঘন দুধে ভাসা ছানার মিষ্টি"
+      }
+    ]
+  },
+  {
+    "district": "dhaka",
+    "items": [
+      {
+        "id": "dhaka-bakarkhani",
+        "en": "Bakarkhani",
+        "bn": "বাকরখানি",
+        "note_en": "Crisp layered flatbread",
+        "note_bn": "মুচমুচে পরতওয়ালা রুটি"
+      },
+      {
+        "id": "dhaka-kacchi",
+        "en": "Kacchi biryani",
+        "bn": "কাচ্চি বিরিয়ানি",
+        "note_en": "Mutton and rice cooked together",
+        "note_bn": "মাংস ও চাল একসঙ্গে রান্না"
+      }
+    ]
+  },
+  {
+    "district": "dinajpur",
+    "items": [
+      {
+        "id": "dinajpur-kataribhog",
+        "en": "Kataribhog rice",
+        "bn": "কাটারিভোগ চাল",
+        "note_en": "Fragrant local rice",
+        "note_bn": "সুগন্ধি স্থানীয় চাল"
+      },
+      {
+        "id": "dinajpur-lichu",
+        "en": "Lychee",
+        "bn": "লিচু",
+        "note_en": "Summer fruit of the north",
+        "note_bn": "উত্তরের গ্রীষ্মের ফল"
+      }
+    ]
+  },
+  {
+    "district": "faridpur",
+    "items": [
+      {
+        "id": "faridpur-khejur-gur",
+        "en": "Khejurer gur",
+        "bn": "খেজুরের গুড়",
+        "note_en": "Winter date-palm jaggery",
+        "note_bn": "শীতকালের খেজুরের গুড়"
+      }
+    ]
+  },
+  {
+    "district": "feni",
+    "items": [
+      {
+        "id": "feni-narkel-naru",
+        "en": "Narkel naru",
+        "bn": "নারকেল নাড়ু",
+        "note_en": "Coconut and jaggery balls",
+        "note_bn": "নারকেল ও গুড়ের নাড়ু"
+      }
+    ]
+  },
+  {
+    "district": "gaibandha",
+    "items": [
+      {
+        "id": "gaibandha-muri",
+        "en": "Muri",
+        "bn": "মুড়ি",
+        "note_en": "Puffed rice snack",
+        "note_bn": "মুড়ির নাশতা"
+      }
+    ]
+  },
+  {
+    "district": "gazipur",
+    "items": [
+      {
+        "id": "gazipur-jackfruit",
+        "en": "Jackfruit",
+        "bn": "কাঁঠাল",
+        "note_en": "Large sweet fruit from the Bhawal area",
+        "note_bn": "ভাওয়াল অঞ্চলের মিষ্টি কাঁঠাল"
+      }
+    ]
+  },
+  {
+    "district": "gopalganj",
+    "items": [
+      {
+        "id": "gopalganj-roshogolla",
+        "en": "Roshogolla",
+        "bn": "রসগোল্লা",
+        "note_en": "Spongy syrup sweets",
+        "note_bn": "রসে ভেজা নরম মিষ্টি"
+      }
+    ]
+  },
+  {
+    "district": "habiganj",
+    "items": [
+      {
+        "id": "habiganj-satkora",
+        "en": "Satkora beef",
+        "bn": "শাটকরা গরুর মাংস",
+        "note_en": "Beef cooked with a citrus fruit",
+        "note_bn": "বুনো লেবুজাতীয় ফল দিয়ে রান্না করা গরুর মাংস"
+      }
+    ]
+  },
+  {
+    "district": "jamalpur",
+    "items": [
+      {
+        "id": "jamalpur-chira-doi",
+        "en": "Chira-doi",
+        "bn": "চিড়া-দই",
+        "note_en": "Flattened rice with curd",
+        "note_bn": "দইয়ের সঙ্গে চিড়া"
+      }
+    ]
+  },
+  {
+    "district": "jashore",
+    "items": [
+      {
+        "id": "jashore-khejur-ras",
+        "en": "Khejurer ros",
+        "bn": "খেজুরের রস",
+        "note_en": "Fresh date palm sap in winter",
+        "note_bn": "শীতের খেজুরের রস"
+      },
+      {
+        "id": "jashore-khejur-gur",
+        "en": "Khejurer gur",
+        "bn": "খেজুরের গুড়",
+        "note_en": "Date-palm jaggery",
+        "note_bn": "খেজুরের গুড়"
+      }
+    ]
+  },
+  {
+    "district": "jhalokati",
+    "items": [
+      {
+        "id": "jhalokati-amra",
+        "en": "Amra",
+        "bn": "আমড়া",
+        "note_en": "Hog plum, eaten with salt and chilli",
+        "note_bn": "লবণ-মরিচ দিয়ে আমড়া"
+      }
+    ]
+  },
+  {
+    "district": "jhenaidah",
+    "items": [
+      {
+        "id": "jhenaidah-banana",
+        "en": "Banana",
+        "bn": "কলা",
+        "note_en": "Local bananas",
+        "note_bn": "স্থানীয় কলা"
+      }
+    ]
+  },
+  {
+    "district": "joypurhat",
+    "items": [
+      {
+        "id": "joypurhat-bhapa-pitha",
+        "en": "Bhapa pitha",
+        "bn": "ভাপা পিঠা",
+        "note_en": "Steamed rice-flour cake",
+        "note_bn": "ভাপে সেদ্ধ চালের পিঠা"
+      }
+    ]
+  },
+  {
+    "district": "khagrachhari",
+    "items": [
+      {
+        "id": "khagrachhari-bamboo-shoot",
+        "en": "Bamboo shoot curry",
+        "bn": "বাঁশের কোড়ল",
+        "note_en": "Hill-people dish of young bamboo",
+        "note_bn": "পাহাড়ি জনগোষ্ঠীর বাঁশের কোড়লের তরকারি"
+      }
+    ]
+  },
+  {
+    "district": "khulna",
+    "items": [
+      {
+        "id": "khulna-chingri",
+        "en": "Golda chingri",
+        "bn": "গলদা চিংড়ি",
+        "note_en": "Giant freshwater prawn",
+        "note_bn": "বড় গলদা চিংড়ি"
+      },
+      {
+        "id": "khulna-chui-jhal",
+        "en": "Chui jhal",
+        "bn": "চুইঝাল",
+        "note_en": "Spicy root used with meat",
+        "note_bn": "মাংসে দেওয়া ঝাল শিকড়"
+      }
+    ]
+  },
+  {
+    "district": "kishoreganj",
+    "items": [
+      {
+        "id": "kishoreganj-pakon",
+        "en": "Pakon pitha",
+        "bn": "পাকন পিঠা",
+        "note_en": "Deep-fried sweet pitha",
+        "note_bn": "তেলে ভাজা মিষ্টি পিঠা"
+      }
+    ]
+  },
+  {
+    "district": "kurigram",
+    "items": [
+      {
+        "id": "kurigram-sweet-potato",
+        "en": "Sweet potato",
+        "bn": "মিষ্টি আলু",
+        "note_en": "Roasted or boiled river-char crop",
+        "note_bn": "চরাঞ্চলের মিষ্টি আলু"
+      }
+    ]
+  },
+  {
+    "district": "kushtia",
+    "items": [
+      {
+        "id": "kushtia-tilkut",
+        "en": "Tilkut",
+        "bn": "তিলকুট",
+        "note_en": "Sesame sweet",
+        "note_bn": "তিলের মিষ্টি"
+      }
+    ]
+  },
+  {
+    "district": "lakshmipur",
+    "items": [
+      {
+        "id": "lakshmipur-chitoi",
+        "en": "Chitoi pitha",
+        "bn": "চিতই পিঠা",
+        "note_en": "Rice-flour pancake",
+        "note_bn": "চালের গুঁড়ার চিতই"
+      }
+    ]
+  },
+  {
+    "district": "lalmonirhat",
+    "items": [
+      {
+        "id": "lalmonirhat-mango",
+        "en": "Mango",
+        "bn": "আম",
+        "note_en": "Summer mango",
+        "note_bn": "গ্রীষ্মের আম"
+      }
+    ]
+  },
+  {
+    "district": "madaripur",
+    "items": [
+      {
+        "id": "madaripur-moa",
+        "en": "Moa",
+        "bn": "মোয়া",
+        "note_en": "Puffed-rice and jaggery ball",
+        "note_bn": "মুড়ি ও গুড়ের মোয়া"
+      }
+    ]
+  },
+  {
+    "district": "magura",
+    "items": [
+      {
+        "id": "magura-til-naru",
+        "en": "Til naru",
+        "bn": "তিলের নাড়ু",
+        "note_en": "Sesame and jaggery ball",
+        "note_bn": "তিল ও গুড়ের নাড়ু"
+      }
+    ]
+  },
+  {
+    "district": "manikganj",
+    "items": [
+      {
+        "id": "manikganj-mishti-doi",
+        "en": "Mishti doi",
+        "bn": "মিষ্টি দই",
+        "note_en": "Sweet set curd",
+        "note_bn": "মিষ্টি জমানো দই"
+      }
+    ]
+  },
+  {
+    "district": "meherpur",
+    "items": [
+      {
+        "id": "meherpur-jilapi",
+        "en": "Jilapi",
+        "bn": "জিলাপি",
+        "note_en": "Syrup-soaked spirals",
+        "note_bn": "রসে ভেজা জিলাপি"
+      }
+    ]
+  },
+  {
+    "district": "moulvibazar",
+    "items": [
+      {
+        "id": "moulvibazar-seven-colour-tea",
+        "en": "Seven-colour tea",
+        "bn": "সাত রঙের চা",
+        "note_en": "Layered tea of Sreemangal",
+        "note_bn": "শ্রীমঙ্গলের স্তরে স্তরে চা"
+      },
+      {
+        "id": "moulvibazar-pineapple",
+        "en": "Pineapple",
+        "bn": "আনারস",
+        "note_en": "Sweet hill pineapple",
+        "note_bn": "পাহাড়ি মিষ্টি আনারস"
+      }
+    ]
+  },
+  {
+    "district": "munshiganj",
+    "items": [
+      {
+        "id": "munshiganj-potato",
+        "en": "Munshiganj potato",
+        "bn": "মুন্সিগঞ্জের আলু",
+        "note_en": "Famed potato growing district",
+        "note_bn": "আলুর জন্য বিখ্যাত জেলা"
+      }
+    ]
+  },
+  {
+    "district": "mymensingh",
+    "items": [
+      {
+        "id": "mymensingh-monda",
+        "en": "Muktagachha monda",
+        "bn": "মুক্তাগাছার মণ্ডা",
+        "note_en": "Dense baked milk sweet",
+        "note_bn": "ঘন দুধের মণ্ডা"
+      }
+    ]
+  },
+  {
+    "district": "naogaon",
+    "items": [
+      {
+        "id": "naogaon-mango",
+        "en": "Mango",
+        "bn": "আম",
+        "note_en": "Local mango varieties",
+        "note_bn": "স্থানীয় আম"
+      }
+    ]
+  },
+  {
+    "district": "narail",
+    "items": [
+      {
+        "id": "narail-sweets",
+        "en": "Narail sweets",
+        "bn": "নড়াইলের মিষ্টি",
+        "note_en": "Local sweets",
+        "note_bn": "স্থানীয় মিষ্টি"
+      }
+    ]
+  },
+  {
+    "district": "narayanganj",
+    "items": [
+      {
+        "id": "narayanganj-ilish",
+        "en": "Ilish",
+        "bn": "ইলিশ",
+        "note_en": "River hilsa",
+        "note_bn": "নদীর ইলিশ"
+      }
+    ]
+  },
+  {
+    "district": "narsingdi",
+    "items": [
+      {
+        "id": "narsingdi-banana",
+        "en": "Banana",
+        "bn": "কলা",
+        "note_en": "Local bananas",
+        "note_bn": "স্থানীয় কলা"
+      }
+    ]
+  },
+  {
+    "district": "natore",
+    "items": [
+      {
+        "id": "natore-kachagolla",
+        "en": "Kachagolla",
+        "bn": "কাঁচাগোল্লা",
+        "note_en": "Soft milk sweet",
+        "note_bn": "নরম ছানার মিষ্টি"
+      }
+    ]
+  },
+  {
+    "district": "netrakona",
+    "items": [
+      {
+        "id": "netrakona-pitha",
+        "en": "Pitha",
+        "bn": "পিঠা",
+        "note_en": "Winter rice-flour cakes",
+        "note_bn": "শীতের চালের পিঠা"
+      }
+    ]
+  },
+  {
+    "district": "nilphamari",
+    "items": [
+      {
+        "id": "nilphamari-rice",
+        "en": "Local rice",
+        "bn": "স্থানীয় চাল",
+        "note_en": "Fragrant northern rice",
+        "note_bn": "উত্তরের সুগন্ধি চাল"
+      }
+    ]
+  },
+  {
+    "district": "noakhali",
+    "items": [
+      {
+        "id": "noakhali-pitha",
+        "en": "Noakhali pitha",
+        "bn": "নোয়াখালীর পিঠা",
+        "note_en": "Local rice-flour cakes",
+        "note_bn": "স্থানীয় চালের পিঠা"
+      }
+    ]
+  },
+  {
+    "district": "pabna",
+    "items": [
+      {
+        "id": "pabna-ghee-sweet",
+        "en": "Pabna sweets",
+        "bn": "পাবনার মিষ্টি",
+        "note_en": "Local milk sweets",
+        "note_bn": "স্থানীয় দুধের মিষ্টি"
+      }
+    ]
+  },
+  {
+    "district": "panchagarh",
+    "items": [
+      {
+        "id": "panchagarh-tea",
+        "en": "Panchagarh tea",
+        "bn": "পঞ্চগড়ের চা",
+        "note_en": "Tea from the far north",
+        "note_bn": "দেশের উত্তরের চা"
+      }
+    ]
+  },
+  {
+    "district": "patuakhali",
+    "items": [
+      {
+        "id": "patuakhali-mohish-doi",
+        "en": "Mohisher doi",
+        "bn": "মহিষের দই",
+        "note_en": "Curd from buffalo milk",
+        "note_bn": "মহিষের দুধের দই"
+      },
+      {
+        "id": "patuakhali-sea-fish",
+        "en": "Sea fish",
+        "bn": "সামুদ্রিক মাছ",
+        "note_en": "Fresh coastal catch",
+        "note_bn": "উপকূলের তাজা মাছ"
+      }
+    ]
+  },
+  {
+    "district": "pirojpur",
+    "items": [
+      {
+        "id": "pirojpur-guava",
+        "en": "Guava",
+        "bn": "পেয়ারা",
+        "note_en": "Sweet Swarupkathi guava",
+        "note_bn": "স্বরূপকাঠির মিষ্টি পেয়ারা"
+      }
+    ]
+  },
+  {
+    "district": "rajbari",
+    "items": [
+      {
+        "id": "rajbari-sweets",
+        "en": "Rajbari sweets",
+        "bn": "রাজবাড়ীর মিষ্টি",
+        "note_en": "Local sweets",
+        "note_bn": "স্থানীয় মিষ্টি"
+      }
+    ]
+  },
+  {
+    "district": "rajshahi",
+    "items": [
+      {
+        "id": "rajshahi-mango",
+        "en": "Mango",
+        "bn": "আম",
+        "note_en": "Himsagar and Langra",
+        "note_bn": "হিমসাগর ও ল্যাংড়া"
+      },
+      {
+        "id": "rajshahi-lichu",
+        "en": "Lychee",
+        "bn": "লিচু",
+        "note_en": "Early summer lychee",
+        "note_bn": "গ্রীষ্মের শুরুর লিচু"
+      }
+    ]
+  },
+  {
+    "district": "rangamati",
+    "items": [
+      {
+        "id": "rangamati-pahari-food",
+        "en": "Hill bamboo dishes",
+        "bn": "পাহাড়ি বাঁশের রান্না",
+        "note_en": "Traditional hill cuisine",
+        "note_bn": "পাহাড়ি জনগোষ্ঠীর ঐতিহ্যবাহী রান্না"
+      }
+    ]
+  },
+  {
+    "district": "rangpur",
+    "items": [
+      {
+        "id": "rangpur-meals",
+        "en": "Rangpur rice dishes",
+        "bn": "রংপুরের ভাত-পদ",
+        "note_en": "Local northern meals",
+        "note_bn": "উত্তরের স্থানীয় খাবার"
+      }
+    ]
+  },
+  {
+    "district": "satkhira",
+    "items": [
+      {
+        "id": "satkhira-crab",
+        "en": "Mud crab",
+        "bn": "কাঁকড়া",
+        "note_en": "Coastal crab dishes",
+        "note_bn": "উপকূলের কাঁকড়ার রান্না"
+      }
+    ]
+  },
+  {
+    "district": "shariatpur",
+    "items": [
+      {
+        "id": "shariatpur-ilish",
+        "en": "Ilish",
+        "bn": "ইলিশ",
+        "note_en": "River hilsa",
+        "note_bn": "নদীর ইলিশ"
+      }
+    ]
+  },
+  {
+    "district": "sherpur",
+    "items": [
+      {
+        "id": "sherpur-pitha",
+        "en": "Pitha",
+        "bn": "পিঠা",
+        "note_en": "Winter rice-flour cakes",
+        "note_bn": "শীতের চালের পিঠা"
+      }
+    ]
+  },
+  {
+    "district": "sirajganj",
+    "items": [
+      {
+        "id": "sirajganj-doi",
+        "en": "Doi",
+        "bn": "দই",
+        "note_en": "Curd of the Jamuna belt",
+        "note_bn": "যমুনা অববাহিকার দই"
+      }
+    ]
+  },
+  {
+    "district": "sunamganj",
+    "items": [
+      {
+        "id": "sunamganj-haor-fish",
+        "en": "Haor fish",
+        "bn": "হাওরের মাছ",
+        "note_en": "Fresh fish from the wetlands",
+        "note_bn": "হাওরের তাজা মাছ"
+      }
+    ]
+  },
+  {
+    "district": "sylhet",
+    "items": [
+      {
+        "id": "sylhet-shatkora",
+        "en": "Shatkora beef",
+        "bn": "শাতকরা গরুর মাংস",
+        "note_en": "Beef with shatkora citrus",
+        "note_bn": "শাতকরা দিয়ে গরুর মাংস"
+      },
+      {
+        "id": "sylhet-akhni",
+        "en": "Akhni",
+        "bn": "আখনি",
+        "note_en": "Spiced rice and meat",
+        "note_bn": "মসলাদার ভাত ও মাংস"
+      }
+    ]
+  },
+  {
+    "district": "tangail",
+    "items": [
+      {
+        "id": "tangail-pora-bari",
+        "en": "Pora Bari chomchom",
+        "bn": "পোড়াবাড়ীর চমচম",
+        "note_en": "Famous syrup sweet",
+        "note_bn": "বিখ্যাত রসের চমচম"
+      }
+    ]
+  },
+  {
+    "district": "thakurgaon",
+    "items": [
+      {
+        "id": "thakurgaon-snacks",
+        "en": "Local snacks",
+        "bn": "স্থানীয় নাশতা",
+        "note_en": "Snacks of the north-west",
+        "note_bn": "উত্তর-পশ্চিমের নাশতা"
+      }
+    ]
+  }
+]

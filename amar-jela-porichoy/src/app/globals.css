@@ -1,0 +1,80 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --font-sans: 'Noto Sans Bengali Variable', system-ui, sans-serif;
+}
+
+:root,
+:root[data-theme='delta'] {
+  --bg: #f4f8f3;
+  --fg: #14301f;
+  --card: #ffffff;
+  --muted: #5d7566;
+  --line: #d3e2d6;
+  --accent: #0b6b3a;
+  --accent-fg: #ffffff;
+  --map-empty: #dce8de;
+  --map-some: #8fcf9f;
+  --map-all: #0b6b3a;
+  --map-stroke: #ffffff;
+  --map-focus: #f2a900;
+  --map-guess: #d1495b;
+}
+:root[data-theme='sunrise'] {
+  --bg: #fff7ee;
+  --fg: #3b1d12;
+  --card: #ffffff;
+  --muted: #86614f;
+  --line: #f0d9c6;
+  --accent: #c4402a;
+  --accent-fg: #ffffff;
+  --map-empty: #f6e3d3;
+  --map-some: #f4b27a;
+  --map-all: #c4402a;
+  --map-stroke: #ffffff;
+  --map-focus: #1d6fa5;
+  --map-guess: #6b3fa0;
+}
+:root[data-theme='night'] {
+  --bg: #0f1a24;
+  --fg: #e6eef5;
+  --card: #172635;
+  --muted: #94a9bb;
+  --line: #27394a;
+  --accent: #4cc2a6;
+  --accent-fg: #06201a;
+  --map-empty: #243646;
+  --map-some: #2f8f7b;
+  --map-all: #4cc2a6;
+  --map-stroke: #0f1a24;
+  --map-focus: #f2c14e;
+  --map-guess: #ef7b8a;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+}
+
+.district {
+  stroke: var(--map-stroke);
+  stroke-width: 0.8;
+  cursor: pointer;
+  transition: fill 120ms;
+}
+.district:hover {
+  filter: brightness(0.92);
+}
+.district:focus-visible {
+  outline: none;
+  stroke: var(--fg);
+  stroke-width: 2.5;
+}
